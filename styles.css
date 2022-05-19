@@ -1,0 +1,374 @@
+body {
+    background-color: #F6EEE8;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    margin: 0;
+    padding: 0;
+    color: #6F6C69;
+    width: 100%;
+}
+
+header {
+    background-color: #D2CFC7;
+    height: 60px;
+}
+
+header a {
+    display: inline-flex;
+    text-decoration: none;
+    width: 100%;
+}
+
+.nav {
+    display: flex;
+    flex-wrap: wrap;
+}
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    height: 100%;
+    width: 100%;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: clamp(1.5rem,5vw,2.5rem);
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+    height: 100%;
+    padding-left: 10px;
+    color: white;
+}
+
+.nav-ul {
+    display: flex;
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    color: white;
+    margin-right: 10px;
+}
+
+.nav-ul a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 60px; 
+    width: 100px;
+    font-size: 1rem;
+    margin: 0 5px;
+    color: white;
+}
+
+.nav-ul.show {
+    display: flex;
+    width: 100%;
+}
+
+.hamburger {
+    background-color: transparent;
+    border: 0;
+    color: white;
+    cursor: pointer;
+    display: none;
+    font-size: 20px;;
+
+}
+
+.hamburger:focus {
+    outline: none;
+}
+
+#accueil {
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+}
+
+#produits {
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+}
+
+#informations {
+    visibility: hidden;
+    width: 30px;
+    height: 30px;
+}
+
+form {
+    display: flex;
+    height: 100%;
+}
+
+.recherche {
+    text-align: center;
+}
+
+.searchBar {
+    display: flex;
+    border: white;
+    padding: 0.5%;
+    width: 95%;
+    height: 70%;
+}
+
+.btnSearch {
+   border: #6F6C69;
+}
+
+.pt1 {
+    display: inline-block;
+}
+
+
+.titre{
+    font-size: 150%;
+    margin: 2%;
+    text-align: center;
+    justify-content: center;
+}
+
+.wrapper{
+    display: grid;
+    grid-template-columns: repeat(2 1fr);
+    margin-bottom: 5%;
+    padding: 3%;
+}
+
+.code-barre{ /*image*/
+    display: flex;
+    margin-top: 5%;
+    margin-left: 37%;
+    width: 25%;
+    height: 80%;
+}
+
+.paragraphe {
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    margin-top: 3%;
+    margin-bottom: 5%;
+    margin-left: 25%;
+    width: 50%;
+}
+
+.division4{
+    display: grid;
+    text-align: center;
+    grid-template-columns: repeat(2, 2fr);
+}
+
+.img { /*image*/
+    display: flex;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.deux {
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+.deux h2{
+    margin-top: 5%;
+}
+
+.deux p {
+    width: 60%;
+    text-align: center;
+    justify-content: center;
+    margin-left: 20%;
+}
+
+.ingredients {
+    margin-top: 10%;
+}
+
+.trois {
+    max-width: 100%;
+    text-align: center;
+    justify-content: center;
+    width: 100%;
+    border-top: 1px solid black;
+}
+
+.titreCaracteristiquet {
+    margin-top: 5%;
+}
+
+.caracteristiques {
+    margin-right: 25%;
+    margin-left: 25%;
+    margin-top: 10%;
+    margin-bottom: 10%;
+    width: 50%;
+    text-align: center;
+    justify-content: center;
+}
+
+.quatre {
+    display: flex;
+    justify-content: center;
+    border-top: 1px solid black;
+}
+
+.images { /*div contenant images*/
+    display: grid;
+    grid-template-columns: 33.33% 33.33% 33.33%;
+}
+
+.photo1 { /*image*/
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+}
+
+.photo2{ /*image*/
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+}
+
+.photo3 {  /*image*/
+    display: flex;
+    max-width: 100%;
+    height: 100%;
+}
+
+.lastDiv { /*image*/
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    padding: 10%;
+}
+
+.txt { /*image*/
+    text-align: center;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 4%;
+    border-bottom: 1px dotted black;
+}
+
+.txt1 {
+    text-align: center;
+    width: 50%;
+    margin-right: 25%;
+    margin-left: 25%;
+    padding: 4%;
+}
+
+.footer {
+    display: flex;
+}
+
+.credits {
+    background-color: #D2CFC7;
+    display: flex;
+    text-align: center;
+    justify-content: center;
+    padding: 1%;
+}
+
+@media only screen and (min-device-width: 480px) and (max-device-width: 720px) {
+
+    .logo {
+        margin-top: 10px;
+        padding-left: 0;
+    }
+
+    .hamburger {
+        display: inline;
+        margin-top: 20px;
+    }
+
+    .nav-ul {
+        display: none;
+    }
+    
+    .division4 {
+         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .un {
+        width: 100%;
+    }
+
+    .deux {
+        width: 100%;
+    }
+
+    .trois {
+        width: 100%;
+    }
+
+    .quatre {
+        width: 100%;
+         margin: auto;
+        justify-content: center;
+    }
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+}
+
+@media only screen and (min-device-width: 721px) and (max-device-width: 1023px) {
+
+
+    .logo {
+        margin-top: 5px;
+        padding-left: 0;
+    }
+
+    .hamburger {
+        display: inline;
+        margin-top: 20px;
+    }
+
+    .nav-ul {
+        display: none;
+    }
+    
+    .division4 {
+         width: 100%;
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .un {
+        width: 100%;
+    }
+
+    .deux {
+        width: 100%;
+    }
+
+    .trois {
+        width: 100%;
+    }
+
+    .quatre {
+        width: 100%;
+        margin: auto;
+        justify-content: center;
+    }
+
+    .images {
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+
+}
